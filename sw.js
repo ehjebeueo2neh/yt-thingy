@@ -1,4 +1,4 @@
-/** 7144919588272318194 */
+/** 2458248292289723336 */
 self.document = self;
 self.window = self;
 var ytcfg = {
@@ -229,6 +229,8 @@ ytcfg.set({
         "web_session_replay_mousemove_interval": 0,
         "web_session_replay_scroll_interval": 0,
         "web_session_replay_send_after_timeout": 0,
+        "web_tracing_max_spans_per_page": 2000,
+        "web_tracing_max_spans_per_trace": 500,
         "web_tracing_session_replay": 3000,
         "wil_icon_max_concurrent_fetches": 9999,
         "ytcsi_debug_max_size": 100,
@@ -244,17 +246,17 @@ ytcfg.set({
     "INNERTUBE_API_KEY": "AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8",
     "INNERTUBE_API_VERSION": "v1",
     "INNERTUBE_CLIENT_NAME": "WEB",
-    "INNERTUBE_CLIENT_VERSION": "2.20261012.01.00",
+    "INNERTUBE_CLIENT_VERSION": "2.20261014.01.00",
     "INNERTUBE_CONTEXT": {
         "client": {
             "hl": "en",
             "gl": "JP",
             "clientName": "WEB",
-            "clientVersion": "2.20261012.01.00"
+            "clientVersion": "2.20261014.01.00"
         }
     },
     "INNERTUBE_CONTEXT_CLIENT_NAME": 1,
-    "INNERTUBE_CONTEXT_CLIENT_VERSION": "2.20261012.01.00",
+    "INNERTUBE_CONTEXT_CLIENT_VERSION": "2.20261014.01.00",
     "LATEST_ECATCHER_SERVICE_TRACKING_PARAMS": {
         "client.name": "WEB"
     }
@@ -263,10 +265,10 @@ window.ytcfg.obfuscatedData_ = [];
 if (self.trustedTypes && self.trustedTypes.createPolicy) {
     var policy = self.trustedTypes.createPolicy('youtubeServiceWorkerPolicy', {
         createScriptURL: function(unused) {
-            return 'https:\/\/www.youtube.com\/s\/desktop\/d58ce706\/jsbin\/serviceworker-kevlar-appshell.vflset\/serviceworker-kevlar-appshell.js';
+            return 'https:\/\/www.youtube.com\/s\/desktop\/f51d9955\/jsbin\/serviceworker-kevlar-appshell.vflset\/serviceworker-kevlar-appshell.js';
         }
     });
     importScripts(policy.createScriptURL(''));
 } else {
-    importScripts('https:\/\/www.youtube.com\/s\/desktop\/d58ce706\/jsbin\/serviceworker-kevlar-appshell.vflset\/serviceworker-kevlar-appshell.js');
+    importScripts('https:\/\/www.youtube.com\/s\/desktop\/f51d9955\/jsbin\/serviceworker-kevlar-appshell.vflset\/serviceworker-kevlar-appshell.js');
 }
